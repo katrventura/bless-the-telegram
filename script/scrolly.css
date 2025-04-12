@@ -1,0 +1,45 @@
+.sticky-thing{ 
+    position: sticky;
+    top: 0vh;
+    z-index: 0;
+}
+
+.steps-container{
+    transform: translate3d(0,0,0);
+    position: relative;
+    padding: 0;
+    z-index: 10;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding-bottom: 4em;
+}
+
+.step {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100svh;
+    transform: translate(0px, 0px);
+    width: 100%;
+    padding: 10px 16px;
+    background: rgb(255, 253, 253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    opacity: 0.95;
+}
+
+.step p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* #step1 {
+    margin-top: -50svh;
+    }
+
+#step4 {
+    margin-bottom: 0vh;
+    } */
+
+    

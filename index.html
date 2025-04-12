@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Bless the telegram</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<style>
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    /* background-color: #121212; */
+    color: #ffffff;
+    width: 1200px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: #333;
+  }
+
+  h3 {
+    text-align: center;
+    
+    font-size: 30px;
+    color: #333;
+    margin-top: 200px;
+  }
+
+  p {
+    text-align: left;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  img {
+    margin-top: 50px;
+
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #333;
+    background-color: gainsboro;
+  }
+  
+
+
+</style>
+</head>
+
+<body>
+
+<body onload="CheckLocation();">
+    <div class="page_wrap">
+
+        <div class="page_body chat_page">
+    
+            <div class="history">
+    
+            <div class="message service" id="message-1">
+    
+            <div class="body details">
+        18 February 2022
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix" id="message6356">
+    
+            <div class="pull_left userpic_wrap">
+    
+            <div class="userpic userpic6" style="width: 42px; height: 42px">
+    
+                <div class="initials" style="line-height: 42px">
+        KV
+                </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 09:57:46 UTC-05:00">
+        09:57
+            </div>
+    
+            <div class="from_name">
+        Kat Ventura
+            </div>
+    
+            <div class="text">
+        Hey man!
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix" id="message6357">
+    
+            <div class="pull_left userpic_wrap">
+    
+            <div class="userpic userpic8" style="width: 42px; height: 42px">
+    
+                <div class="initials" style="line-height: 42px">
+        MA
+                </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 09:57:58 UTC-05:00">
+        09:57
+            </div>
+    
+            <div class="from_name">
+        Marco Azurin
+            </div>
+    
+            <div class="text">
+        Hi!!
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix joined" id="message6358">
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 09:58:26 UTC-05:00">
+        09:58
+            </div>
+    
+            <div class="text">
+        How&apos;s the typing going along?
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix" id="message6359">
+    
+            <div class="pull_left userpic_wrap">
+    
+            <div class="userpic userpic6" style="width: 42px; height: 42px">
+    
+                <div class="initials" style="line-height: 42px">
+        KV
+                </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 10:00:04 UTC-05:00">
+        10:00
+            </div>
+    
+            <div class="from_name">
+        Kat Ventura
+            </div>
+    
+            <div class="text">
+        Just finished
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix joined" id="message6360">
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 10:00:44 UTC-05:00">
+        10:00
+            </div>
+    
+            <div class="text">
+        I&apos;m actually headed to my &quot;workshop&quot; haha
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix joined" id="message6361">
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 10:01:32 UTC-05:00">
+        10:01
+            </div>
+    
+            <div class="text">
+        Working on something for this mural painting happening tom
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix" id="message6362">
+    
+            <div class="pull_left userpic_wrap">
+    
+            <div class="userpic userpic8" style="width: 42px; height: 42px">
+    
+                <div class="initials" style="line-height: 42px">
+        MA
+                </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 10:01:43 UTC-05:00">
+        10:01
+            </div>
+    
+            <div class="from_name">
+        Marco Azurin
+            </div>
+    
+            <div class="text">
+        Wow what??
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix" id="message6363">
+    
+            <div class="pull_left userpic_wrap">
+    
+            <div class="userpic userpic6" style="width: 42px; height: 42px">
+    
+                <div class="initials" style="line-height: 42px">
+        KV
+                </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 10:01:47 UTC-05:00">
+        10:01
+            </div>
+    
+            <div class="from_name">
+        Kat Ventura
+            </div>
+    
+            <div class="text">
+        Call you in 5
+            </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="message default clearfix" id="message6364">
+    
+            <div class="pull_left userpic_wrap">
+    
+            <div class="userpic userpic8" style="width: 42px; height: 42px">
+    
+                <div class="initials" style="line-height: 42px">
+        MA
+                </div>
+    
+            </div>
+    
+            </div>
+    
+            <div class="body">
+    
+            <div class="pull_right date details" title="18.02.2022 10:01:52 UTC-05:00">
+        10:01
+            </div>
+    
+            <div class="from_name">
+        Marco Azurin
+            </div>
+    
+            <div class="text">
+        Sure sure
+            </div>
+    
+            </div>
+    
+            </div>
+        </div>
+        </div>
+    
+        </div>
+
+        <link href="script/chat-style.css" rel="stylesheet"/>
+        <script src="script/chat.js" type="text/javascript"></script>
+
+
+
+</body>
+
+<cover>
+<!-- Generated by ai2html v0.120.2 - 2025-04-05 00:01 -->
+<!-- ai file: cover.ai -->
+<style media="screen,print">
+	#g-cover-box ,
+	#g-cover-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-cover-box p {
+		margin:0;
+	}
+	#g-cover-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-cover-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-cover-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-cover-box .g-aiPointText p { white-space: nowrap; }
+	#g-cover-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-cover-Artboard_1 p {
+		font-weight:regular;
+		line-height:29px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:24px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+        font-family:'Courier New', Courier, monospace;
+	}
+	#g-cover-Artboard_1 .g-pstyle0 {
+		font-weight:500;
+		height:29px;
+		text-align:justify;
+	}
+
+</style>
+
+<div id="g-cover-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-cover-Artboard_1" class="g-artboard" style="max-width: 900px;max-height: 1611px" data-aspect-ratio="0.559" data-min-width="0">
+<div style="padding: 0 0 178.9983% 0;"></div>
+		<img id="g-cover-Artboard_1-img" class="g-cover-Artboard_1-img g-aiImg" alt="" src="assets/cover-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.7671%;margin-top:-16.9px;left:37.063%;width:224px;">
+			<p class="g-pstyle0">by Kat Ventura</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:40.1794%;margin-top:-31.3px;left:32.9161%;width:324px;">
+			<p class="g-pstyle0">for Juan Marco Azurin</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:65.5949%;margin-top:-31.3px;left:38.6609%;width:195px;">
+			<p class="g-pstyle0">MARCO Azurin</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.9558%;margin-top:-31.3px;left:38.6769%;width:195px;">
+			<p class="g-pstyle0">Marco Azurin</p>
+		</div>
+	</div>
+
+</div>
+<!-- End ai2html - 2025-04-05 00:01 -->
+</cover>
+
+<p>Dear Marco:</p>
+<p>Happy third anniversary! We made it to April 14, 2025 and that in itself is a feat. Today is a culmination of each day we allowed the other person to hold us too close, hurt us too deep and ruin our sleep. That last part, I have come to realize, has been happening even before the 12 hour time difference and the interruptions from Molly. I have been interrupting you with 3 hour calls ever since you messaged me on Instagram.</p>
+
+<p>While our interaction started on Instagram, our conversation continued on Telegram. Our Telegram chat went alive on February 18, 2022 at 9:57 PM PST to be exact and that chat is what I wanted to look at in this data story. Because saying 'I choose you today' is easy, but sending a message when you wake up, responding to a message and not leaving it seen, or opening the Telegram app after a difficult call is acting on that choice. 
+</p>
+
+<p>So when we sent our 190,858th message on February 18, 2025, I decided to download our chat history and find our love story in the data. What you're about to see was shaped by everything I learned since coming to New York — and was born from a promise I made to you on that cloudy Wednesday morning: that one day, you'd be part of my story.</p>
+    
+<h3>Chapter 1</h3>
+<p>When we started our relationship, we thought we would run out of things to say. But as you will soon see (and might have realized by now), that was not the case.</p>
+
+
+<section id="scrolly1">
+    <div class="sticky-thing">
+        <div id="graphic"></div>
+    </div>
+    <div class="steps-container">
+        <div class ="step" data-step="0" id="step0">
+            <p>This is our Telegram chat history where each pixel is a message. We sent a total of <br><span style="font-weight: bold;">190,858</span> messages in 3 years.</p>
+        </div>
+        <div class="step" data-step="1" id="step1">
+            <p>You sent <span style=" font-weight:bold; color:#3C7908;">102,115</span> messages
+            <br>which makes up 53.5% of our chat</p>
+            </p>
+        </div>
+        <div class="step" data-step="2" id="step2">
+            <p>I sent <span style="color:#ddb334; font-weight:bold;">88, 743</span> messages
+                <br>which makes up 46.5% of our chat.</p>
+        </div>
+        <div class="step" data-step="3" id="step3">
+            
+            <p>We sent <span style="font-weight: bold;">8,941</span> reactions
+               <br>🫡🫡🫡</p>
+        </div>
+        <!-- <div class="step" data-step="4" id="step4">
+            <p>And called <span style="font-weight: bold;">585 </span>times on Telegram</p>
+                <br> (29.4% of the time it ended up on Google Meet)</p>
+        </div> -->
+        <!-- <div class="step" data-step="5" id="step5">
+            <p>Our longest call lasted around 6 hours! 
+            <br>This was on March 21, 2022.
+            </p>
+        </div> -->
+    </div>
+
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+
+<link rel="stylesheet" href="script/scrolly.css">
+<script src="script/scrolly.js"></script>
+
+</section>
+
+
+<h3>Chapter 2</h3>
+
+<p>When I began working on this project, one of the first questions I wanted the dataset to answer was: 'What names did Marco call me?'. I have been meaning to keep a list of all the clever and oftentimes <i>pilit</i> variations you had for "kitkat" but it was difficult keep up! And because sifting through the dataset for every word that might refer to me would mean training a large language model, I went for the next best thing: filtering every message you sent that starts with 'hi,' 'hello' or 'hey,' and then determining whether the word that followed was a nickname or not.</p>
+
+<p>I ended up with a list of 177 nicknames, some names were the same but spelled slightly differently. Also included in the list is 'you' or 'u' which you have used a couple of times when you're <i>gigil</i>. Some names were hard to identify at first because they appeared in phrases such as 'I watch Shimpshons' or 'my sentimental kitty.' You even called me 'Jonathan' once which I had to verify and count as a nickname because you were in fact referring to me.</p>
+
+<br><br> 
+
+<iframe title="Every nickname Marco gave Kat on Telegram" aria-label="Range Plot" id="datawrapper-chart-zFCDm" src="https://datawrapper.dwcdn.net/zFCDm/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="3200" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+<image src="assets/tigerkat.png" alt="tigerkat" style="width: 900px; height: 900px;"/>
+
+<p>I also gave you nicknames on Telegram, but none as silly as 'snik snak'—which, by the way, you wrote both as 'snik snak' and 'sniksnak'. I mostly called you bub, which I used 588 times in the chat. The rest are variations of bub, like bud, buddy, bubby, bubs, buck, hub and bb.</p>
+
+<br><br>
+<iframe title="Every nickname Kat gave Marco on Telegram " aria-label="Range Plot" id="datawrapper-chart-JHjB9" src="https://datawrapper.dwcdn.net/JHjB9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="477" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+<image src="assets/cowboymarco.png" alt="cowboymarco" style="width: 900px; height: 900px;"/>
+
+
+<h3>Chapter 3</h3>
+<p>Now we get into the weeds of the word analysis by counting the number of times a certain word or phrase was sent on Telegram.Starting </p>
+
+<p>It's not a competition but the first person to say 'I love you' was you. We had been dating for three months and had just come from a dinner with your family. It was the first time I met them. It was also the first time you actually called me your 'girlfriend' and it was when you introduced me to Ate Ana.</p>
+
+<p>I know it took some time for me to say it back. While I can't remember the exact moment I said it in person, the data does show that I started saying 'I love you' in July 2022.</p>
+
+<br>
+
+<iframe title="Kat said 'love you' more" aria-label="Interactive line chart" id="datawrapper-chart-aqd3u" src="https://datawrapper.dwcdn.net/aqd3u/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="539" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+<br><br><br>
+
+<div class="message default clearfix" id="message6363">
+    
+    <div class="pull_left userpic_wrap">
+
+    <div class="userpic userpic6" style="width: 42px; height: 42px">
+
+        <div class="initials" style="line-height: 42px">
+KV
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="body">
+
+    <div class="pull_right date details" title="18.02.2022 10:01:47 UTC-05:00">
+
+    </div>
+
+    <div class="from_name">
+Kat Ventura
+    </div>
+
+    <div class="text">
+        i know you had trouble falling asleep last night so i wanted to make sure you at least wake up feeling good. so yeah, i love you and miss you, marco! kiss kita mwahh
+    </div>
+
+    </div>
+
+    </div>
+    
+
+<p>By July 2023, a year later, the 'i love you' texts were sent more frequently and I started texting it a bit more than you did. In total we sent 1,026 'i love you' texts in three years, 51.9% of the messages were from me while 48.1% of the messages were sent by you, Marco. This of course is just a difference of 3.8% and love can be expressed in a multitude of ways.</p>
+
+<p>The opposite, however, is true for "I miss you" and this is what I personally found interesting. I was under the impression that because I was the one who was away, I would be the one to miss you more. But the data shows that you sent relatively more "I miss you" texts than I did.</p>
+        
+<br>
+<iframe title="Marco said 'miss you' more" aria-label="Interactive line chart" id="datawrapper-chart-873Oa" src="https://datawrapper.dwcdn.net/873Oa/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="688" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+<p>And what's even funnier, bub, is that you sent me the most 'miss you' messages early in the relationship and before I left for New York, shlong ka! In July 2022, you sent me 25 "miss you" messages.  The most number of messages was sent on July 11, when you told me you missed me in six separate messages sent minutes apart. Ano ba yan!</p>
+
+<br><br><br>
+
+<div class="message default clearfix" id="message6357">
+    
+        <div class="pull_left userpic_wrap">
+    
+        <div class="userpic userpic8" style="width: 42px; height: 42px">
+    
+            <div class="initials" style="line-height: 42px">
+    MA
+            </div>
+    
+        </div>
+    
+        </div>
+    
+        <div class="body">
+    
+        <div class="pull_right date details" title="18.02.2022 7:36:32 UTC-05:00">7:36
+        </div>
+    
+        <div class="from_name">
+    Marco Azurin
+        </div>
+    
+        <div class="text">
+            hay i miss you
+        </div>
+    
+        </div>
+    
+        </div>
+
+        <div class="message default clearfix" id="message6357">
+    
+            <div class="pull_left userpic_wrap">
+        
+            <div class="userpic userpic8" style="width: 42px; height: 42px">
+        
+                <div class="initials" style="line-height: 42px">
+        MA
+                </div>
+        
+            </div>
+        
+            </div>
+        
+            <div class="body">
+        
+            <div class="pull_right date details" title="18.02.2022 7:41:57 UTC-05:00">7:41
+            </div>
+        
+            <div class="from_name">
+        Marco Azurin
+            </div>
+        
+            <div class="text">
+            i miss youuu
+            </div>
+        
+            </div>
+        
+            </div>
+
+            
+            <div class="message default clearfix" id="message6357">
+    
+                <div class="pull_left userpic_wrap">
+            
+                <div class="userpic userpic8" style="width: 42px; height: 42px">
+            
+                    <div class="initials" style="line-height: 42px">
+            MA
+                    </div>
+            
+                </div>
+            
+                </div>
+            
+                <div class="body">
+            
+                <div class="pull_right date details" title="18.02.2022 7:41:57 UTC-05:00">7:46
+                </div>
+            
+                <div class="from_name">
+            Marco Azurin
+                </div>
+            
+                <div class="text">
+                    i miss you!!!!!
+                </div>
+            
+                </div>
+            
+                </div>
+    
+             <div class="message default clearfix" id="message6357">
+    
+                    <div class="pull_left userpic_wrap">
+                
+                    <div class="userpic userpic8" style="width: 42px; height: 42px">
+                
+                        <div class="initials" style="line-height: 42px">
+                MA
+                        </div>
+                
+                    </div>
+                
+                    </div>
+                
+                    <div class="body">
+                
+                    <div class="pull_right date details" title="18.02.2022 7:41:57 UTC-05:00">7:47
+                    </div>
+                
+                    <div class="from_name">
+                Marco Azurin
+                    </div>
+                
+                    <div class="text">
+                        i miss you ☺️
+                    </div>
+                
+                    </div>
+                
+            </div>
+
+            <div class="message default clearfix" id="message6357">
+    
+                <div class="pull_left userpic_wrap">
+            
+                <div class="userpic userpic8" style="width: 42px; height: 42px">
+            
+                    <div class="initials" style="line-height: 42px">
+            MA
+                    </div>
+            
+                </div>
+            
+                </div>
+            
+                <div class="body">
+            
+                <div class="pull_right date details" title="18.02.2022 7:41:57 UTC-05:00">7:48
+                </div>
+            
+                <div class="from_name">
+            Marco Azurin
+                </div>
+            
+                <div class="text">
+                    i miss you!
+                </div>
+            
+                </div>
+            
+                </div>
+    
+                <div class="message default clearfix" id="message6357">
+    
+                    <div class="pull_left userpic_wrap">
+                
+                    <div class="userpic userpic8" style="width: 42px; height: 42px">
+                
+                        <div class="initials" style="line-height: 42px">
+                MA
+                        </div>
+                
+                    </div>
+                
+                    </div>
+                
+                    <div class="body">
+                
+                    <div class="pull_right date details" title="18.02.2022 7:41:57 UTC-05:00">7:48
+                    </div>
+                
+                    <div class="from_name">
+                Marco Azurin
+                    </div>
+                
+                    <div class="text">
+                        i miss youuuu
+                    </div>
+                
+                    </div>      
+</div>
+
+
+<h3>Chapter 4</h3>
+
+<p>Finally, I’ll share the results of the sentiment analysis. Like Star Wars, Python has a package called VADER that stands for Valence Aware Dictionary and sEntiment Reasoner. What VADER does is it scores and categorizes messages as positive, neutral and negative based on the words used. Messages with scores between -0.05 and 0.05 are considered neutral, while scores below or above that range are classified as negative or positive, respectively.</p>
+
+<p>Of the 190,858 messages we sent on Telegram, 58% were neutral, 34% were positive, and 8% were negative. This is sentiment chart, where each pixel is a message.</p>
+
+<img src="assets/sentiment.png" alt="sentiment" style="width: 100%; height: 100%;"/>
+
+<br><br><br>
+
+<p>When we talk about our day or ask how the other is doing, these messages are considered neutral. But when we say 'good night' or add 'mwah' in our chat, the message turns positive. Negative messages show up when we express that things didn’t go our way that day, or when I sprinkle my messages with curse words like 'damn' and 'fuck'—that message automatically becomes negative.</p>
+
+<p>One caveat to this sentiment analysis is that I don’t know how well it works with Filipino or how accurately it detects sarcasm. But since our chat is mostly in English, the scores should not be too far off from the truth.</p>
+
+<img src="assets/sentiment_canvas.png" alt="sentiment canvas" style="width: 100%; height: 100%;"/>
+
+<p>These past three years have brought us many challenges and much joy. I think of how the most pivotal moments in our lives happened when we were together — losing a loved one, living independently, releasing an album, and earning a degree — and how we’ve each become a witness to the other's journey. They say people get married, or in our case, enter into a relationship because we want to witness someone’s life and have ours witnessed in return. I’m always grateful to be a witness to your life, and somehow, a part of your story.</p>
+
+<p>I’ll end this project with a message we sent each other that received one of the highest positive sentiment compound scores.</p>
+<br><br><br>
+
+<section>
+<div class="message default clearfix" id="message6357">
+    
+    <div class="pull_left userpic_wrap">
+
+    <div class="userpic userpic8" style="width: 42px; height: 42px">
+
+        <div class="initials" style="line-height: 42px">
+MA
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="body">
+
+    <div class="pull_right date details" title="18.02.2022 09:57:58 UTC-05:00">
+    </div>
+
+    <div class="from_name">
+Marco Azurin
+    </div>
+
+    <div class="text">
+        Hi lamb chop. A while ago I read Malcolm Gladwell’s piece on Late Bloomers. A 2008 piece for the New Yorker. I felt I needed to read it.It contrasted late bloomers to prodigies. Prodigies know exactly what to create, so they have no need for experimentation (because they create masterpieces instantly). But late bloomers are those that need to experiment, and it’s after searching for so long that they eventually find success.“On the road to great achievement, the late bloomer will resemble a failure: while the late bloomer is revising and despairing and changing course and slashing canvases to ribbons after months or years, what he or she produces will look like the kind of thing produced by the artist who will never bloom at all. Prodigies are easy. They advertise their genius from the get-go. Late bloomers are hard. They require forbearance and blind faith.”The article’s thesis was that late bloomers succeed because they stick to their experiments long enough — and they’re able to do so because they have a good support system.The article featured a writer who finally broke through the literary scene at age 48, after deciding to be a full time writer at 29. His book was about Haiti, and he ended up visiting Haiti 30 times before finally finishing the book. But this didn’t bother his wife at all, who was the family’s breadwinner, and supported his decision to write full-time.Another excerpt:“”When Ben first did this, we talked about the fact that it might not work, and we talked about, generally, ‘When will we know that it really isn’t working?’ and I’d say, ‘Well, give it ten years,’ ” Sharie recalled. To her, ten years didn’t seem unreasonable. “It takes a while to decide whether you like something or not,” she says. And when ten years became twelve and then fourteen and then sixteen, and the kids were off in high school, she stood by him, because, even during that long stretch when Ben had nothing published at all, she was confident that he was getting better.””I found this really sweet, and relateable too as you’ve become my support system in a similar way.I like how Gladwell said that the stories of late bloomers are almost always love stories. Because it takes loyalty and the willingness to support what at the moment “looks like failure”.
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+<div class="message default clearfix" id="message6363">
+    
+    <div class="pull_left userpic_wrap">
+
+    <div class="userpic userpic6" style="width: 42px; height: 42px">
+
+        <div class="initials" style="line-height: 42px">
+KV
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="body">
+
+    <div class="pull_right date details" title="18.02.2022 10:01:47 UTC-05:00">
+
+    </div>
+
+    <div class="from_name">
+Kat Ventura
+    </div>
+
+    <div class="text">
+        Thanks for being there to comfort me. I do appreciate it, partner and for everything else you do! I know we do talk about the timing of all of these things -- us reconnecting and starting a relationship. And lately I have been thinking about your timing entering my life and how you just came amidst the chaos. I had set out to do a lot of things this year but was not at all prepared for everything else that came. And I needed someone like you to help me get through it. I know that being in a relationship is already not easy as it is and that staying in one is the real challenge. But I'd like to think that we've created a good foundation for ourselves these past months and we have good values to move us forward.
+    </div>
+
+    </div>
+
+    </div>
+</section>
+
+<br>
+
+<p>Happy third anniversary, bub! I love you mwah!</p>
+
+<br><br>
+
+</body>
+
+</html>
